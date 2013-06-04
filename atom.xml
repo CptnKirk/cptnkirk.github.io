@@ -4,7 +4,7 @@
   <title><![CDATA[Software Samurai]]></title>
   <link href="http://CptnKirk.github.io/atom.xml" rel="self"/>
   <link href="http://CptnKirk.github.io/"/>
-  <updated>2013-06-04T00:07:48-07:00</updated>
+  <updated>2013-06-04T00:24:58-07:00</updated>
   <id>http://CptnKirk.github.io/</id>
   <author>
     <name><![CDATA[Jim Hazen]]></name>
@@ -30,9 +30,9 @@
 <p><a href="http://www.youtube.com/watch?v=mGKMq0Cyiks">http://www.youtube.com/watch?v=mGKMq0Cyiks</a> &mdash; Erlang: Noob to production in 2 months
 <a href="http://www.youtube.com/watch?v=8BNpOHFvg_Q">http://www.youtube.com/watch?v=8BNpOHFvg_Q</a> &mdash; Lager: Logging with confidence</p>
 
-<p>One shows how a single hacker developed and deployed a web based chat services to his community in a couple months.  The other shows how a developer decided to improve the logging standard that he was forced to work with and by doing so elevated the state of the art for an entire community.</p>
+<p>One shows how a hacker developed and deployed some web based chat services to his community in a couple months.  The other shows how a hacker decided to improve the logging standard that he was forced to work with; and by doing so elevated the state of the art for an entire community.</p>
 
-<p>I&rsquo;ve recently been discussing continuous integration with my co-workers.  To most hacker cultures this is simply a given; the first presentation talks about his continuous build/deploy process.  He was pimping Erlang&rsquo;s hot code deployment and &ldquo;telnet to the VM&rdquo; capabilities, continuous integration was a given but he briefly discussed his setup.</p>
+<p>I&rsquo;ve recently been discussing continuous integration with my co-workers.  To most hacker cultures this is simply a given; the first presenter talks about his continuous build/deploy process.  He was pimping Erlang&rsquo;s hot code deployment and &ldquo;telnet to the VM&rdquo; capabilities, continuous integration was a given but he briefly discussed his setup.</p>
 
 <p>So where am I going with this?  I&rsquo;ve come to realize that I respect and admire a lot of &ldquo;hacker&rdquo; qualities.  I want more of that, I want to embody more of that, and I love working with people that have similar aspirations and values.</p>
 
