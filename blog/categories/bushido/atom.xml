@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Software Samurai]]></title>
-  <link href="http://CptnKirk.github.io/atom.xml" rel="self"/>
+  <title><![CDATA[Category: bushido | Software Samurai]]></title>
+  <link href="http://CptnKirk.github.io/blog/categories/bushido/atom.xml" rel="self"/>
   <link href="http://CptnKirk.github.io/"/>
   <updated>2013-06-06T22:01:57-07:00</updated>
   <id>http://CptnKirk.github.io/</id>
