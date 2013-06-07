@@ -5,7 +5,7 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Software Samurai</title>
+  <title>Do you want a blog like this? - Software Samurai</title>
   <meta name="author" content="Jim Hazen">
 
   
@@ -18,7 +18,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://CptnKirk.github.io">
+  <link rel="canonical" href="http://CptnKirk.github.io/blog/2013/06/06/do-you-want-a-blog-like-this">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="/atom.xml" rel="alternate" title="Software Samurai" type="application/atom+xml">
@@ -63,15 +63,12 @@
 </nav>
   <div id="main">
     <div id="content">
-      <div class="blog-index">
+      <div>
+<article class="hentry" role="article">
   
-  
-  
-    <article>
-      
   <header>
     
-      <h1 class="entry-title"><a href="/blog/2013/06/06/do-you-want-a-blog-like-this/">Do You Want a Blog Like This?</a></h1>
+      <h1 class="entry-title">Do You Want a Blog Like This?</h1>
     
     
       <p class="meta">
@@ -94,7 +91,7 @@
   </header>
 
 
-  <div class="entry-content"><p>Getting a blog like this one, or at least one that looks like this one is easy and free.</p>
+<div class="entry-content"><p>Getting a blog like this one, or at least one that looks like this one is easy and free.</p>
 
 <p>There are many different ways to blog these days, many of them free, but I chose this method for a few reasons:</p>
 
@@ -107,76 +104,30 @@
 
 <p>Step by step guide to getting one of these bad boys after the break&hellip;</p>
 
+<!-- more -->
+
+
+<ol>
+<li><p>Download octopress (<a href="http://octopress.org/docs/setup/">http://octopress.org/docs/setup/</a>).  Follow the steps at the preceeding link.  You&rsquo;ll also end up installing git and ruby along the way if you don&rsquo;t already have it.</p></li>
+<li><p>Continue on to configuring your deployment and pick a github deployment (<a href="http://octopress.org/docs/deploying/github/">http://octopress.org/docs/deploying/github/</a>).  If it&rsquo;s not overly obvious from the link, you&rsquo;ll need to create a github account (free) by going here (<a href="http://octopress.org/docs/deploying/github/">http://octopress.org/docs/deploying/github/</a>) and clicking the big green &ldquo;Sign up for free&rdquo; button.  Pick an awesome username and that&rsquo;s about it. You may have to wait for an E-mail or something, but after that, sign back into github.  Once you&rsquo;re back in click on another green button that says &ldquo;New repository&rdquo;.  Name your repository <username>.github.io (the octopress instructions list a .com prefix, and it&rsquo;ll work, but github would prefer you use .io).  The format is important, and if you follow this convention, your repository will be published as a Github Pages site to <username>.github.io.  It takes a few minutes the first time for the sites to sync but it&rsquo;s really fast after that.  When your repo is created, go to your account settings (screwdriver/wrench icon, upper right).  Then on the left click on SSH Keys (<a href="https://github.com/settings/ssh">https://github.com/settings/ssh</a>).  Follow the instructions for generating a new one, or upload a public key that you already have.  You&rsquo;ll need this for write access to your repository.  When you&rsquo;re done, head back to console and type <code>rake setup_github_pages</code>.  You&rsquo;ll have to answer some questions based on the information you should now have.</p></li>
+<li><p>Now you can generate your base site by typing <code>rake generate</code> followed by <code>rake deploy</code>.  If all goes well, octopress should do its thing and in a few minutes you&rsquo;ll end up with your own empty site at <username>.github.io just waiting for your blog posts.</p></li>
+<li><p>Create a blog post, with <code>rake new_post["some title"]</code>.  It&rsquo;ll generate a post file for you and tell you where it is.  Put some text in here and you&rsquo;re blogging.  Blogs like these are mostly text, but can be augmented with a little markup.  If you&rsquo;re wondering how I&rsquo;m able to apply a special treatment to the commands, then visit these pretty good sites for an intro to markdown <a href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet">https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet</a> and <a href="https://help.github.com/articles/github-flavored-markdown">https://help.github.com/articles/github-flavored-markdown</a>).  Your entries will be prettier than mine in no time.</p></li>
+<li><p>Fix _config.yml.  It&rsquo;s at the octopress root dir, it contains some default values at the top, but you want to customize these for yourself.</p></li>
+<li><p><code>rake generate</code> to rebuild your site locally, <code>rake deploy</code> to push it out to github servers.  You can also use <code>rake preview</code> to start up a little local server.  This helps you see what will be published.  You can run this little server, edit posts and then visit <a href="http://localhost:4000">http://localhost:4000</a> to see your pre-published site.</p></li>
+<li><p>Happy blogging.  Write posts, generate, deploy, again and again.  Go back and read more about octopress, GitHub Pages and all the various flavors of markup syntax that are supported.  Don&rsquo;t like this theme, there are plenty more, take a look at the octopress site.  If you forget where you put it, check the footer at the bottom of your site (or go back to step 1).</p></li>
+</ol>
+
 </div>
-  
-  
-    <footer>
-      <a rel="full-article" href="/blog/2013/06/06/do-you-want-a-blog-like-this/">Read on &rarr;</a>
-    </footer>
-  
 
 
-    </article>
-  
-  
-    <article>
+  <footer>
+    <p class="meta">
       
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2013/06/04/cultivating-a-hacker-culture-the-culture/">Cultivating a Hacker Culture: The Culture</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
   
 
+<span class="byline author vcard">Posted by <span class="fn">Jim Hazen</span></span>
 
-<time datetime="2013-06-04T10:28:00-07:00" pubdate data-updated="true">Jun 4<span>th</span>, 2013</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>Previously I wrote about the hacker.  The warrior of the digital age.  In this post I&rsquo;ll explore the hacker culture. When I think about those whom I associate with being members of the hacker culture I think about a few hacker hallmarks:</p>
-
-<ul>
-<li><p>Solve a problem.  There are so many problems to be solved and hackers are innate problem solvers. Within the Open Source movement, hacker are free to solve the problems that interest them. In the corporate world they thrive in tackling the hardest problems.  Often working with fellow hackers on innovative solutions.</p></li>
-<li><p>Knowledge and information are the lifeblood of achievement and this knowledge must be freely available.  Hackers get a bad rap for being anti-social nerds.  But the truth is that they&rsquo;re often highly social.  The Open Source and Free Software movement demonstrated how hackers from around the world could collaborate together to disrupt and improve the nature of software development.</p></li>
-<li><p>The Meritocracy.  The hacker culture at it&rsquo;s core is a meritocracy.  A hacker&rsquo;s accomplishments, his improvements to the culture are his currency.  This promotes the sharing of ideas and the improvement of existing conditions in order to gain the recognition (or sometimes just personal satisfaction) of the community. The more people that use and benefit from your creation the greater the value of that creation.</p></li>
-<li><p>Whatever you&rsquo;re doing, be great at it.  You don&rsquo;t have to be a coder to be a hacker.  I&rsquo;ve seen many a DevOps, CQ and PM embody the hacker ideals.</p></li>
-</ul>
-
-
-</div>
-  
-  
-    <footer>
-      <a rel="full-article" href="/blog/2013/06/04/cultivating-a-hacker-culture-the-culture/">Read on &rarr;</a>
-    </footer>
-  
-
-
-    </article>
-  
-  
-    <article>
       
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2013/06/01/cultivating-a-hacker-culture-the-hacker/">Cultivating a Hacker Culture: The Hacker</a></h1>
-    
-    
-      <p class="meta">
-        
 
 
 
@@ -188,32 +139,40 @@
   
 
 
-<time datetime="2013-06-01T23:46:00-07:00" pubdate data-updated="true">Jun 1<span>st</span>, 2013</time>
-        
-      </p>
+<time datetime="2013-06-06T22:04:00-07:00" pubdate data-updated="true">Jun 6<span>th</span>, 2013</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/teaching/'>teaching</a>
+  
+</span>
+
+
+    </p>
     
-  </header>
+      <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://CptnKirk.github.io/blog/2013/06/06/do-you-want-a-blog-like-this/" data-via="" data-counturl="http://CptnKirk.github.io/blog/2013/06/06/do-you-want-a-blog-like-this/" >Tweet</a>
+  
+  
+  
+    <div class="fb-like" data-send="true" data-width="450" data-show-faces="false"></div>
+  
+</div>
 
-
-  <div class="entry-content"><p>I&rsquo;m the type of person who is constantly looking at new technology or ways of developing software.  I&rsquo;m always looking for the next big thing that will allow me to do something I couldn&rsquo;t before, or do the same stuff quicker or easier.  I&rsquo;ve recently been attracted to watching YouTube presentations on whatever it is that&rsquo;s on my mind.  Recently something got me thinking.  Nearly all of the best presentations are given by a class of developers that I associate with being &ldquo;hackers&rdquo;.</p>
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2013/06/04/cultivating-a-hacker-culture-the-culture/" title="Previous Post: Cultivating a Hacker Culture: The Culture">&laquo; Cultivating a Hacker Culture: The Culture</a>
+      
+      
+    </p>
+  </footer>
+</article>
 
 </div>
-  
-  
-    <footer>
-      <a rel="full-article" href="/blog/2013/06/01/cultivating-a-hacker-culture-the-hacker/">Read on &rarr;</a>
-    </footer>
-  
 
-
-    </article>
-  
-  <div class="pagination">
-    
-    <a href="/blog/archives">Blog Archives</a>
-    
-  </div>
-</div>
 <aside class="sidebar">
   
     <section>
@@ -238,7 +197,7 @@
 <section>
   <h1>GitHub Repos</h1>
   <ul id="gh_repos">
-    <li class="loading">Status updating&#8230;</li>
+    <li class="loading">Status updating...</li>
   </ul>
   
   <a href="https://github.com/CptnKirk">@CptnKirk</a> on GitHub
@@ -270,6 +229,7 @@
 
   
 </aside>
+
 
     </div>
   </div>

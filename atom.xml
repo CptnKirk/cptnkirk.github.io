@@ -4,7 +4,7 @@
   <title><![CDATA[Software Samurai]]></title>
   <link href="http://CptnKirk.github.io/atom.xml" rel="self"/>
   <link href="http://CptnKirk.github.io/"/>
-  <updated>2013-06-06T22:01:57-07:00</updated>
+  <updated>2013-06-06T23:12:51-07:00</updated>
   <id>http://CptnKirk.github.io/</id>
   <author>
     <name><![CDATA[Jim Hazen]]></name>
@@ -12,6 +12,40 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Do you want a blog like this?]]></title>
+    <link href="http://CptnKirk.github.io/blog/2013/06/06/do-you-want-a-blog-like-this/"/>
+    <updated>2013-06-06T22:04:00-07:00</updated>
+    <id>http://CptnKirk.github.io/blog/2013/06/06/do-you-want-a-blog-like-this</id>
+    <content type="html"><![CDATA[<p>Getting a blog like this one, or at least one that looks like this one is easy and free.</p>
+
+<p>There are many different ways to blog these days, many of them free, but I chose this method for a few reasons:</p>
+
+<ul>
+<li><p>Comes with a free code repository built in.  Because this is backed by github, it is not only possible to post code snippets, but entire executable projects (with associated issue tracking and wiki) demonstrating my ideas.</p></li>
+<li><p>Is a full fledged hosted site.  Thus far I&rsquo;ve typed a few buttons to generate the site, then another command to create a text file, then a bunch of words to fill in a couple text files and then another couple commands to build and publish the site.  I&rsquo;ve been mega-leeching off the works of others, and that&rsquo;s ok for now.  Over time I&rsquo;ll want to customize this site into something that is uniquely mine so having full control over the site&rsquo;s code and being able to host any contents I want (images, videos, files, etc) is important to me.</p></li>
+<li><p>Github, jekyll, octopress (some of the software used in this site) are tools for hackers by hackers.  They integrate with other free services made by hackers for hackers (like <a href="http://about.travis-ci.org/docs/">http://about.travis-ci.org/docs/</a>).  Getting into game at this end of the pool sets me up for greater things down the road, both for my blog and development projects.</p></li>
+</ul>
+
+
+<p>Step by step guide to getting one of these bad boys after the break&hellip;</p>
+
+<!-- more -->
+
+
+<ol>
+<li><p>Download octopress (<a href="http://octopress.org/docs/setup/">http://octopress.org/docs/setup/</a>).  Follow the steps at the preceeding link.  You&rsquo;ll also end up installing git and ruby along the way if you don&rsquo;t already have it.</p></li>
+<li><p>Continue on to configuring your deployment and pick a github deployment (<a href="http://octopress.org/docs/deploying/github/">http://octopress.org/docs/deploying/github/</a>).  If it&rsquo;s not overly obvious from the link, you&rsquo;ll need to create a github account (free) by going here (<a href="http://octopress.org/docs/deploying/github/">http://octopress.org/docs/deploying/github/</a>) and clicking the big green &ldquo;Sign up for free&rdquo; button.  Pick an awesome username and that&rsquo;s about it. You may have to wait for an E-mail or something, but after that, sign back into github.  Once you&rsquo;re back in click on another green button that says &ldquo;New repository&rdquo;.  Name your repository <username>.github.io (the octopress instructions list a .com prefix, and it&rsquo;ll work, but github would prefer you use .io).  The format is important, and if you follow this convention, your repository will be published as a Github Pages site to <username>.github.io.  It takes a few minutes the first time for the sites to sync but it&rsquo;s really fast after that.  When your repo is created, go to your account settings (screwdriver/wrench icon, upper right).  Then on the left click on SSH Keys (<a href="https://github.com/settings/ssh">https://github.com/settings/ssh</a>).  Follow the instructions for generating a new one, or upload a public key that you already have.  You&rsquo;ll need this for write access to your repository.  When you&rsquo;re done, head back to console and type <code>rake setup_github_pages</code>.  You&rsquo;ll have to answer some questions based on the information you should now have.</p></li>
+<li><p>Now you can generate your base site by typing <code>rake generate</code> followed by <code>rake deploy</code>.  If all goes well, octopress should do its thing and in a few minutes you&rsquo;ll end up with your own empty site at <username>.github.io just waiting for your blog posts.</p></li>
+<li><p>Create a blog post, with <code>rake new_post["some title"]</code>.  It&rsquo;ll generate a post file for you and tell you where it is.  Put some text in here and you&rsquo;re blogging.  Blogs like these are mostly text, but can be augmented with a little markup.  If you&rsquo;re wondering how I&rsquo;m able to apply a special treatment to the commands, then visit these pretty good sites for an intro to markdown <a href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet">https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet</a> and <a href="https://help.github.com/articles/github-flavored-markdown">https://help.github.com/articles/github-flavored-markdown</a>).  Your entries will be prettier than mine in no time.</p></li>
+<li><p>Fix _config.yml.  It&rsquo;s at the octopress root dir, it contains some default values at the top, but you want to customize these for yourself.</p></li>
+<li><p><code>rake generate</code> to rebuild your site locally, <code>rake deploy</code> to push it out to github servers.  You can also use <code>rake preview</code> to start up a little local server.  This helps you see what will be published.  You can run this little server, edit posts and then visit <a href="http://localhost:4000">http://localhost:4000</a> to see your pre-published site.</p></li>
+<li><p>Happy blogging.  Write posts, generate, deploy, again and again.  Go back and read more about octopress, GitHub Pages and all the various flavors of markup syntax that are supported.  Don&rsquo;t like this theme, there are plenty more, take a look at the octopress site.  If you forget where you put it, check the footer at the bottom of your site (or go back to step 1).</p></li>
+</ol>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Cultivating a Hacker Culture: The Culture]]></title>
