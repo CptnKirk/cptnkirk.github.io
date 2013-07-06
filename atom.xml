@@ -4,7 +4,7 @@
   <title><![CDATA[Software Samurai]]></title>
   <link href="http://CptnKirk.github.io/atom.xml" rel="self"/>
   <link href="http://CptnKirk.github.io/"/>
-  <updated>2013-06-18T20:47:31-07:00</updated>
+  <updated>2013-07-05T21:00:29-07:00</updated>
   <id>http://CptnKirk.github.io/</id>
   <author>
     <name><![CDATA[Jim Hazen]]></name>
@@ -12,6 +12,57 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[This book will make you a better Software Developer]]></title>
+    <link href="http://CptnKirk.github.io/blog/2013/07/05/this-book-will-make-you-a-better-software-developer/"/>
+    <updated>2013-07-05T17:31:00-07:00</updated>
+    <id>http://CptnKirk.github.io/blog/2013/07/05/this-book-will-make-you-a-better-software-developer</id>
+    <content type="html"><![CDATA[<p>I&rsquo;ve just finished reading a beta copy of Joe Armstrong&rsquo;s latest book: <a href="http://pragprog.com/book/jaerlang2/programming-erlang">Programming Erlang (2nd edition)</a>.  I got the book because I have an interest in Erlang, respect Joe Armstrong, and don&rsquo;t have the 1st edition.  I expected to learn more about Erlang.  What I got was so much more.</p>
+
+<p>To me, this book is truly great not because it teaches you Erlang.  It&rsquo;s great because it teaches you the fundamentals of modern concurrent software systems and <em>then</em> demonstrates how to implement such systems with the Erlang language, its foundational libraries and a few free 3rd-party libraries.</p>
+
+<p>I&rsquo;ve been programming in mostly Java for the last 17+ years.  This book on Erlang has shown me how to be a better Java Developer.</p>
+
+<p>How can this be?  This is possible because the goals of modern software systems are language agnostic.  Your users don&rsquo;t care what programming language your thing is written in.  They care about the feature set, the rate of new features, the speed of the system and the availability of the system.  You as a developer care about the maintainability of the system and ease at which the solutions in your head can be turned into solutions your users can use.</p>
+
+<p>How this book helps every Developer:</p>
+
+<!--more-->
+
+
+<ul>
+<li>Gets you thinking about abstractions. This is an insanely important concept for every developer to grasp.  No matter what kind of project you have, you&rsquo;ll be working with and developing abstractions.  When you use a development framework you&rsquo;re leveraging an abstraction.  It&rsquo;s vitally important to understand these abstractions to make the most of them.  When you&rsquo;re developing a software system you&rsquo;re exposing your own abstractions to your users. You may not think you&rsquo;re doing this, but you are.  You as a developer are distilling the limitless possibilities of software down to a set of specific behaviors that your system supports.  The better defined these behaviors are, the better your software will be.</li>
+</ul>
+
+
+<p>Put another way, software systems can be expressed as a collection of general behaviors driven by specific inputs.  The better you are at understanding the general, the better you&rsquo;ll be at taking advantage of the specifics.  On the flip side, the better your general abstractions are, the better your users will be at using them to drive their specifics.  And the more successful your users are with your system, the better off you are. Once the book points out a few abstractions, you&rsquo;ll start to notice them everywhere.</p>
+
+<ul>
+<li>Gets you thinking functionally.  Erlang is a language that supports higher order functions (functions that take other functions).  Java is not.  This doesn&rsquo;t mean there&rsquo;s nothing for the Java guy.  On the contrary, you&rsquo;ll be exposed to some beautiful data processing abstractions that you&rsquo;ll yearn for from now on.  Mapping, folding, filtering, both sequentially and in parallel; you want these abstractions. Once you see their beauty you can think about how to get that beauty in whatever language you&rsquo;re using.  Just thinking along those lines makes you better than you were.  For the Java guys, <a href="http://groovy.codehaus.org/">Groovy</a> brings excellent functional support to Java.  Technically Groovy is a new language, but it integrates so well that I think of it more as Java++.  <a href="http://code.google.com/p/guava-libraries/">Guava</a> is a pure set of Java libraries from Google that implement many functional abstractions within the Java language.  Java 8 will include support for functional programming via <a href="http://docs.oracle.com/javase/tutorial/java/javaOO/lambdaexpressions.html">Lambdas</a>.</li>
+</ul>
+
+
+<p>Functional abstractions let you write much shorter code and reduce the thought/code impedance mismatch. Once familiar with existing functional abstractions you can start building your own. Once you&rsquo;ve built your own you&rsquo;ll find that composing these abstractions becomes much easier.  Your codebase becomes clearer and smaller and simpler.</p>
+
+<ul>
+<li><p>Gets you thinking in terms of isolation + messaging.  Most modern software systems want/need to support concurrency.  For many developers this is an extremely difficult area of computer science to get right.  You think it&rsquo;s hard to start with, then you think you have it finally figured out, then Doug Lea shows you that you don&rsquo;t. This is because you&rsquo;re trying to coordinate access to shared state.  If instead don&rsquo;t share any state and instead communicate via messages a whole class of problems disappears.  You also end up with an architecture well aligned for distributed computing.</p></li>
+<li><p>Demonstrates that distributed computing doesn&rsquo;t have to be complicated. Erlang supports location transparency out of the box. The book shows you how Erlang does it.  Once you&rsquo;ve seen it done effortlessly you can think about how you might accomplish something similar given the tools that you have.  You&rsquo;ll be better off after the show and tell at the very least.</p></li>
+<li><p>Gets you thinking in terms of embedding functionality into your product, rather than embedding your product into an external container.  This isn&rsquo;t explicitly called out in the book, but it&rsquo;s something that has become apparent after reading the book, getting better at spotting abstractions and digging into several Erlang projects.</p></li>
+</ul>
+
+
+<p>In the Java world, if your service is communicating via HTTP or HTTPS, your service code is probably deployed within a &ldquo;web container&rdquo;.  This container acts as a middleman between your users and your Java code, translating HTTP requests into Java method calls.  In Java you embed your business code within someone else&rsquo;s container.  In Erlang, you embed someone else&rsquo;s HTTP abstraction within your application.</p>
+
+<p>There are pros and cons, but many developers aren&rsquo;t even aware that thinking in terms of an &ldquo;abstraction marketplace&rdquo; for their project is an option.  For the Java guys wanting HTTP protocol handling <em>within</em> their application, take a look at <a href="http://www.eclipse.org/jetty/">Jetty</a> and <a href="http://netty.io/">Netty</a>.</p>
+
+<hr />
+
+<p>I&rsquo;m going to stop here.  If you&rsquo;re a hacker, buy this book.  I think you&rsquo;ll probably like Erlang, but even if you don&rsquo;t there&rsquo;s a good chance you&rsquo;ll get some quality ideas for improving your next project.</p>
+
+<p>PS:  Most of this post was selling this book on the merits of high level abstractions and whatnot, but that&rsquo;s not nearly all.  If you wanna learn about using Erlang for websockets, writing a custom MP3 shoutcast server, or even a distributed search engine.  This book puts its money where its mouth is and uses all this talk to develop some nice functional software.  The examples are clear, but also very powerful.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Hacker Spotlight: Kresten Krab Thorup]]></title>
